@@ -20,8 +20,11 @@ $(document).ready(function(){
     $("#timeDisplay").text(time);
     console.log(newClock.time);
     console.log(time);
-    while (time > newClock.time) {
-
+    debugger;
+    if (time > newClock.time) {
+      $('#alarm-message').text("Your alarm has not gone off");
+    } else {
+      $('#alarm-message').text("Your alarm expired");
     }
   });
 });
