@@ -8,7 +8,20 @@
     <title></title>
   </head>
   <body>
-    <h3>Well look at the time now! </h3>
-    <h3 id="time"></h3>
+    <div class="container">
+      <div class="current-time">
+        <h3>Time:</h3>
+        <p id="time"> </p>
+      </div>
+      <br>
+      <div class="set-alarm">
+        <h3>Set Alarm</h3>
+        <form class="set-alarm-form">
+          <label for="set-alarm">Enter Time</label>
+          <input type="time" name="set-alarm" id="set-alarm">
+          <button type="submit">Set Alarm</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
